@@ -1,0 +1,268 @@
+[HAMI-core Msg(17732:140712880573312:libvgpu.c:837)]: Initializing.....
+[HAMI-core Warn(17732:140712880573312:multiprocess_memory_limit.c:552)]: Kick dead proc 4801
+[HAMI-core Msg(17732:140712880573312:libvgpu.c:853)]: Initialized
+============================================================
+  U-Net Segmentation — Oxford-IIIT Pet Dataset
+============================================================
+  Image size:   256×256
+  Classes:      3 (foreground / background / boundary)
+  Epochs:       8
+  Batch size:   96
+  Learning rate: 0.001
+  Device:       cuda
+  Output dir:   /inspire/hdd/project/fdu-aidake-cfff/public/zhouhaowen/unet-segmentation/output
+  Experiments:  CE_only, Dice_only, CE_Dice
+============================================================
+
+============================================================
+  Experiment: CE_only
+============================================================
+  Device: cuda
+  Model parameters: 31,037,763
+============================================================
+Loading Oxford-IIIT Pet Dataset...
+  Data root: /inspire/hdd/project/fdu-aidake-cfff/public/zhouhaowen/unet-segmentation/data
+  Train samples: 3680
+  Val samples:   3669
+
+  Epoch  1/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 1.0304
+    Batch [ 20/38]  Loss: 0.7265
+  ────────────────────────────────────────
+  Train Loss: 0.7503  |  Time: 307.4s
+
+  Epoch  2/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.6190
+    Batch [ 20/38]  Loss: 0.6386
+  ────────────────────────────────────────
+  Train Loss: 0.6026  |  Val Loss: 0.6580
+  Val mIoU:   0.4469  |  Time: 596.3s
+  ★ New best model saved (mIoU: 0.4469)
+
+  Epoch  3/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.5280
+    Batch [ 20/38]  Loss: 0.5514
+  ────────────────────────────────────────
+  Train Loss: 0.5305  |  Time: 289.7s
+
+  Epoch  4/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.4858
+    Batch [ 20/38]  Loss: 0.4950
+  ────────────────────────────────────────
+  Train Loss: 0.4856  |  Val Loss: 0.4650
+  Val mIoU:   0.5763  |  Time: 597.6s
+  ★ New best model saved (mIoU: 0.5763)
+
+  Epoch  5/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.4534
+    Batch [ 20/38]  Loss: 0.4771
+  ────────────────────────────────────────
+  Train Loss: 0.4472  |  Time: 299.6s
+
+  Epoch  6/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.4156
+    Batch [ 20/38]  Loss: 0.4195
+  ────────────────────────────────────────
+  Train Loss: 0.4157  |  Val Loss: 0.4342
+  Val mIoU:   0.6093  |  Time: 571.2s
+  ★ New best model saved (mIoU: 0.6093)
+
+  Epoch  7/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.3879
+    Batch [ 20/38]  Loss: 0.4107
+  ────────────────────────────────────────
+  Train Loss: 0.3979  |  Time: 293.1s
+
+  Epoch  8/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.4083
+    Batch [ 20/38]  Loss: 0.4321
+  ────────────────────────────────────────
+  Train Loss: 0.3758  |  Val Loss: 0.3793
+  Val mIoU:   0.6410  |  Time: 580.7s
+  ★ New best model saved (mIoU: 0.6410)
+
+  Finished CE_only in 3538.0s
+  Best mIoU: 0.6410 @ epoch 8
+
+  ✓ CE_only completed (best mIoU: 0.6410)
+
+============================================================
+  Experiment: Dice_only
+============================================================
+  Device: cuda
+  Model parameters: 31,037,763
+============================================================
+Loading Oxford-IIIT Pet Dataset...
+  Data root: /inspire/hdd/project/fdu-aidake-cfff/public/zhouhaowen/unet-segmentation/data
+  Train samples: 3680
+  Val samples:   3669
+
+  Epoch  1/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.7080
+    Batch [ 20/38]  Loss: 0.4317
+  ────────────────────────────────────────
+  Train Loss: 0.4784  |  Time: 301.8s
+
+  Epoch  2/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.3831
+    Batch [ 20/38]  Loss: 0.3140
+  ────────────────────────────────────────
+  Train Loss: 0.3249  |  Val Loss: 0.3089
+  Val mIoU:   0.5624  |  Time: 563.1s
+  ★ New best model saved (mIoU: 0.5624)
+
+  Epoch  3/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.2942
+    Batch [ 20/38]  Loss: 0.2619
+  ────────────────────────────────────────
+  Train Loss: 0.2751  |  Time: 435.7s
+
+  Epoch  4/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.2570
+    Batch [ 20/38]  Loss: 0.2670
+  ────────────────────────────────────────
+  Train Loss: 0.2571  |  Val Loss: 0.2452
+  Val mIoU:   0.6330  |  Time: 819.5s
+  ★ New best model saved (mIoU: 0.6330)
+
+  Epoch  5/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.2446
+    Batch [ 20/38]  Loss: 0.2485
+  ────────────────────────────────────────
+  Train Loss: 0.2412  |  Time: 410.6s
+
+  Epoch  6/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.2264
+    Batch [ 20/38]  Loss: 0.2242
+  ────────────────────────────────────────
+  Train Loss: 0.2315  |  Val Loss: 0.2351
+  Val mIoU:   0.6404  |  Time: 620.1s
+  ★ New best model saved (mIoU: 0.6404)
+
+  Epoch  7/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.2212
+    Batch [ 20/38]  Loss: 0.2347
+  ────────────────────────────────────────
+  Train Loss: 0.2248  |  Time: 291.8s
+
+  Epoch  8/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.2129
+    Batch [ 20/38]  Loss: 0.2179
+  ────────────────────────────────────────
+  Train Loss: 0.2181  |  Val Loss: 0.2192
+  Val mIoU:   0.6624  |  Time: 596.4s
+  ★ New best model saved (mIoU: 0.6624)
+
+  Finished Dice_only in 4041.2s
+  Best mIoU: 0.6624 @ epoch 8
+
+  ✓ Dice_only completed (best mIoU: 0.6624)
+
+============================================================
+  Experiment: CE_Dice
+============================================================
+  Device: cuda
+  Model parameters: 31,037,763
+============================================================
+Loading Oxford-IIIT Pet Dataset...
+  Data root: /inspire/hdd/project/fdu-aidake-cfff/public/zhouhaowen/unet-segmentation/data
+  Train samples: 3680
+  Val samples:   3669
+
+  Epoch  1/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 1.9826
+    Batch [ 20/38]  Loss: 1.2469
+  ────────────────────────────────────────
+  Train Loss: 1.3843  |  Time: 288.9s
+
+  Epoch  2/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 1.0867
+    Batch [ 20/38]  Loss: 0.9960
+  ────────────────────────────────────────
+  Train Loss: 1.0373  |  Val Loss: 1.1899
+  Val mIoU:   0.4741  |  Time: 566.5s
+  ★ New best model saved (mIoU: 0.4741)
+
+  Epoch  3/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 1.0024
+    Batch [ 20/38]  Loss: 0.9461
+  ────────────────────────────────────────
+  Train Loss: 0.9518  |  Time: 272.2s
+
+  Epoch  4/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.8694
+    Batch [ 20/38]  Loss: 0.9111
+  ────────────────────────────────────────
+  Train Loss: 0.8755  |  Val Loss: 0.9240
+  Val mIoU:   0.5625  |  Time: 569.8s
+  ★ New best model saved (mIoU: 0.5625)
+
+  Epoch  5/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.8707
+    Batch [ 20/38]  Loss: 0.7794
+  ────────────────────────────────────────
+  Train Loss: 0.7943  |  Time: 230.6s
+
+  Epoch  6/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.6959
+    Batch [ 20/38]  Loss: 0.7032
+  ────────────────────────────────────────
+  Train Loss: 0.7369  |  Val Loss: 0.9380
+  Val mIoU:   0.5754  |  Time: 520.3s
+  ★ New best model saved (mIoU: 0.5754)
+
+  Epoch  7/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.7283
+    Batch [ 20/38]  Loss: 0.6830
+  ────────────────────────────────────────
+  Train Loss: 0.6954  |  Time: 154.4s
+
+  Epoch  8/8
+  ────────────────────────────────────────
+    Batch [  0/38]  Loss: 0.6192
+    Batch [ 20/38]  Loss: 0.6746
+  ────────────────────────────────────────
+  Train Loss: 0.6581  |  Val Loss: 0.6684
+  Val mIoU:   0.6657  |  Time: 310.0s
+  ★ New best model saved (mIoU: 0.6657)
+
+  Finished CE_Dice in 2914.9s
+  Best mIoU: 0.6657 @ epoch 8
+
+  ✓ CE_Dice completed (best mIoU: 0.6657)
+
+Comparison plot saved to: /inspire/hdd/project/fdu-aidake-cfff/public/zhouhaowen/unet-segmentation/output/comparison.png
+
+============================================================
+  Final Results Summary
+============================================================
+  Experiment      Best mIoU    Best Epoch   Params    
+  ─────────────────────────────────────────────────
+  CE_only         0.6410       8            31,037,763
+  Dice_only       0.6624       8            31,037,763
+  CE_Dice         0.6657       8            31,037,763
+============================================================
+[HAMI-core Msg(17732:140712880573312:multiprocess_memory_limit.c:459)]: Calling exit handler 17732
